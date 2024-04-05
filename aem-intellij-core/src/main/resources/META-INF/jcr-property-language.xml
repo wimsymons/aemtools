@@ -30,6 +30,8 @@
 
         <lang.elementManipulator implementationClass="com.aemtools.lang.clientlib.manipulator.CdIncludeManipulator"
                                  forClass="com.aemtools.lang.clientlib.psi.CdInclude"/>
+        <annotator language="XML"
+                   implementationClass="com.aemtools.codeinsight.xml.JcrPrimaryTypeAnnotator"/>
 
     </extensions>
 </idea-plugin>

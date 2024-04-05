@@ -256,6 +256,9 @@ object const {
 
     const val FELIX_PROPERTY_ANNOTATION = "org.apache.felix.scr.annotations.Property"
     const val FELIX_PROPERTIES_ANNOTATION = "org.apache.felix.scr.annotations.Properties"
+
+    const val FELIX_SERVICE_REFERENCE_ANNOTATION = "org.apache.felix.scr.annotations.Reference"
+    const val OSGI_SERVICE_REFERENCE_ANNOTATION = "org.osgi.service.component.annotations.Reference"
   }
 
   object osgi {
@@ -283,6 +286,32 @@ object const {
     const val SLING_MESSAGE: String = "sling:message"
     const val JCR_MIXIN_TYPES: String = "jcr:mixinTypes"
     const val LANGUAGE_MIXIN: String = "mix:language"
+  }
+
+  object sling {
+    val SLING_INJECTORS: List<String> = listOf(
+        "org.apache.sling.models.annotations.injectorspecific.ValueMapValue",
+        "org.apache.sling.models.annotations.injectorspecific.ScriptVariable",
+        "org.apache.sling.models.annotations.injectorspecific.ChildResource",
+        "org.apache.sling.models.annotations.injectorspecific.RequestAttribute",
+        "org.apache.sling.models.annotations.injectorspecific.ResourcePath",
+        "org.apache.sling.models.annotations.injectorspecific.OSGiService",
+        "org.apache.sling.models.annotations.injectorspecific.ContextAwareConfiguration",
+        "org.apache.sling.models.annotations.injectorspecific.Self",
+        "org.apache.sling.models.annotations.injectorspecific.SlingObject"
+    )
+
+    val ACS_COMMONS_INJECTORS: List<String> = listOf(
+        "com.adobe.acs.commons.models.injectors.annotation.ParentResourceValueMapValue",
+        "com.adobe.acs.commons.models.injectors.annotation.AemObject",
+        "com.adobe.acs.commons.models.injectors.annotation.ChildResourceFromRequest",
+        "com.adobe.acs.commons.models.injectors.annotation.HierarchicalPageProperty",
+        "com.adobe.acs.commons.models.injectors.annotation.I18N",
+        "com.adobe.acs.commons.models.injectors.annotation.JsonValueMapValue",
+        "com.adobe.acs.commons.models.injectors.annotation.SharedValueMapValue"
+    )
+
+    const val JAVAX_INJECT = "javax.inject.Inject"
   }
 
 }

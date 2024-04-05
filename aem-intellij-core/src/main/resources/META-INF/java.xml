@@ -61,5 +61,8 @@
                 hasStaticDescription="true"
                 implementationClass="com.aemtools.inspection.osgi.MessedFelixComponentMetatypeInspection"/>
 
+        <implicitUsageProvider implementation="com.aemtools.codeinsight.impicitusage.SlingModelFieldsImplicitUsageProvider"/>
+        <implicitUsageProvider implementation="com.aemtools.codeinsight.impicitusage.OSGiServiceImplicitUsageProvider"/>
+
     </extensions>
 </idea-plugin>
