@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.4]
+[1.0.4]: https://github.com/aemtools/aemtools/tree/v1.0.4
+### New features
+- [fields annotated with Sling Models annotations should be marked as implicitly written](https://github.com/aemtools/aemtools/issues/249)
+- [.content.xml validation for jcr:primaryType](https://github.com/aemtools/aemtools/issues/250)
+### Maintenance
+- Add support of 241.* Intellij IDE
+
 ## [1.0.3]
 [1.0.3]: https://github.com/aemtools/aemtools/tree/v1.0.3
 ### Maintenance
